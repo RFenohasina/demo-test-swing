@@ -20,7 +20,7 @@ public class DemoApplication  {
 		ConfigurableApplicationContext context = builder.run(args);
 		ApplicationContext context = new SpringApplicationBuilder(DemoApplication.class)
 				.headless(false)
-				.run(args);
+				.run(args);*/
 	}
 
 	/*@Override
