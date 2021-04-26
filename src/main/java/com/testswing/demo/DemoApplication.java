@@ -11,11 +11,11 @@ import javax.swing.*;
 import java.awt.*;
 
 @SpringBootApplication
-public class DemoApplication {
+public class DemoApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
-		/*SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoApplication.class);*
+		/*SpringApplication.run(DemoApplication.class, args);
+		SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoApplication.class);
 		builder.headless(false);
 		ConfigurableApplicationContext context = builder.run(args);*/
 		ApplicationContext context = new SpringApplicationBuilder(DemoApplication.class)
