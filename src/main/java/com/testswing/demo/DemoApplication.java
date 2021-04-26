@@ -11,9 +11,9 @@ import javax.swing.*;
 import java.awt.*;
 
 @SpringBootApplication
-public class DemoApplication  {
+public class DemoApplication  implements CommandLineRunner  {
 
-	public static void main(String[] args) implements CommandLineRunner {
+	public static void main(String[] args) {
 		/*SpringApplication.run(DemoApplication.class, args);
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoApplication.class);
 		builder.headless(false);
