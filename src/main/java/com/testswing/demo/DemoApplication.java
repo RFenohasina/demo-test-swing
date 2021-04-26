@@ -11,23 +11,23 @@ import javax.swing.*;
 import java.awt.*;
 
 @SpringBootApplication
-public class DemoApplication implements CommandLineRunner {
+public class DemoApplication  {
 
 	public static void main(String[] args) {
-		/*SpringApplication.run(DemoApplication.class, args);
-		SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoApplication.class);
+		SpringApplication.run(DemoApplication.class, args);
+		/*SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoApplication.class);
 		builder.headless(false);
-		ConfigurableApplicationContext context = builder.run(args);*/
+		ConfigurableApplicationContext context = builder.run(args);
 		ApplicationContext context = new SpringApplicationBuilder(DemoApplication.class)
 				.headless(false)
 				.run(args);
 	}
 
-	@Override
+	/*@Override
 	public void run(String... args) throws Exception {
 		SwingUtilities.invokeLater(()->{
 			JFrame frame = new JFrame();
 			frame.setVisible(false);
 		});
-	}
+	}*/
 }
