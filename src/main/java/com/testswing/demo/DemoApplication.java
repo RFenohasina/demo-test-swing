@@ -13,7 +13,7 @@ import java.awt.*;
 @SpringBootApplication
 public class DemoApplication  {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) implements CommandLineRunner {
 		/*SpringApplication.run(DemoApplication.class, args);
 		SpringApplicationBuilder builder = new SpringApplicationBuilder(DemoApplication.class);
 		builder.headless(false);
